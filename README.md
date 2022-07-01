@@ -1,6 +1,13 @@
 # mytn-funlib
 Node Library of Functions
 
+## What Makes This an NPM Package?
+
+Within the package.json the following snippit makes this a package.
+```
+  "type": "module",
+```
+
 # Local NPM Package
 
 `npm link`</br>
