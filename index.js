@@ -8,6 +8,8 @@ import strToBase64 from './modules/strToBase64.js'
 import base64ToStr from './modules/base64ToStr.js'
 import strToEscape from './modules/strToEscape.js'
 import escapeToStr from './modules/escapeToStr.js'
+import getTimeRemaining from './modules/getTimeRemaining'
+import getTimeSince from './modules/getTimeSince'
 
 var myStr = "var x = 0"
 console.log ('Binary: ', strToBinary(myStr) )
@@ -29,5 +31,7 @@ export default {
     strToBase64,
     base64ToStr,
     strToEscape,
-    escapeToStr
+    escapeToStr,
+    getTimeRemaining,
+    getTimeSince
 }
