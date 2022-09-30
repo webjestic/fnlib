@@ -1,11 +1,20 @@
 {
-  "name": "mytn-funlib",
-  "version": "1.0.0",
-  "description": "Node Library of Functions",
+  "name": "fnlib",
+  "version": "0.1.0",
+  "description": "JavaScript Library of Functions",
+  "keywords": [
+    "node",
+    "functions",
+    "library"
+  ],
   "main": "index.js",
   "type": "module",
+  "engines": {
+    "node": ">14"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "vitest --run",
+    "lint": "eslint . --cache "
   },
   "repository": {
     "type": "git",
@@ -17,8 +26,8 @@
     "url": "https://github.com/webjestic/mytn-funlib/issues"
   },
   "homepage": "https://github.com/webjestic/mytn-funlib#readme",
-  "dependencies": {},
   "devDependencies": {
-    "eslint": "^8.18.0"
+    "eslint": "^8.18.0",
+    "vitest": "^0.23.4"
   }
 }

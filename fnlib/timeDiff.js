@@ -11,7 +11,7 @@ function calcTimeDifference(dtimeTotal) {
 
 /**
  * 
- * @param {new Date(Date.now())} starttime 
+ * @param {new Date(Date.now())} endtime 
  * @returns json
  */
 export function getTimeRemaining(endtime){
