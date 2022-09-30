@@ -1,4 +1,6 @@
-function binaryToStr(str) {
+
+
+export default function binaryToStr(str) {
     var newBin = str.split(" ");
     var binCode = [];
     for (var i = 0; i < newBin.length; i++) {
@@ -6,5 +8,3 @@ function binaryToStr(str) {
     }
     return binCode.join("");
 }
-
-export default binaryToStr

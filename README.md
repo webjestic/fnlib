@@ -1,4 +1,4 @@
-# mytn-funlib
+# fnlib
 Node Library of Functions
 
 ## What Makes This an NPM Package?

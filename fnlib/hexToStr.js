@@ -1,5 +1,5 @@
 
-function hexToStr(str) {
+export default function hexToStr(str) {
     var newHex = str.split(" ");
     var binCode = [];
 
@@ -9,4 +9,3 @@ function hexToStr(str) {
     return binCode.join("")
 }
 
-export default hexToStr
