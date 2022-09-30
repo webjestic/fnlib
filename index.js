@@ -1,13 +1,17 @@
 
-import capitalizeFirstLetter from './modules/capitalizeFirstLetter.js'
-import strToHex from './modules/strToHex.js'
-import hexToStr from './modules/hexToStr.js'
-import strToBinary from './modules/strToBinary.js'
-import binaryToStr from './modules/binaryToStr.js'
-import strToBase64 from './modules/strToBase64.js'
-import base64ToStr from './modules/base64ToStr.js'
-import strToEscape from './modules/strToEscape.js'
-import escapeToStr from './modules/escapeToStr.js'
+import capitalizeFirstLetter from './fnlib/capitalizeFirstLetter.js'
+import strToHex from './fnlib/strToHex.js'
+import hexToStr from './fnlib/hexToStr.js'
+import strToBinary from './fnlib/strToBinary.js'
+import binaryToStr from './fnlib/binaryToStr.js'
+import strToBase64 from './fnlib/strToBase64.js'
+import base64ToStr from './fnlib/base64ToStr.js'
+import strToEscape from './fnlib/strToEscape.js'
+import escapeToStr from './fnlib/escapeToStr.js'
+
+import formatBytes from './fnlib/formatBytes,js'
+import sleep from './fnlib/sleep.js'
+import { getTimeRemaining, getTimeSince } from './fnlib/timeDiff.js'
 
 var myStr = "var x = 0"
 console.log ('Binary: ', strToBinary(myStr) )
@@ -29,5 +33,10 @@ export default {
     strToBase64,
     base64ToStr,
     strToEscape,
-    escapeToStr
+    escapeToStr,
+
+    formatBytes,
+    sleep,
+    getTimeRemaining,
+    getTimeSince
 }
