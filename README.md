@@ -1,23 +1,109 @@
 # fnlib
-Node Library of Functions
 
-## What Makes This an NPM Package?
+Simple library of JavaScript Node functions.
 
-Within the package.json the following snippit makes this a package.
+## Install
+
+`npm i fnlib`
+
+## Import
+
+Import all the functions: </br>
+`import * as fnlib from 'fnlib`
+
+Import only what you need: </br>
+`import { strToHex, hexToStr } from 'fnlib`
+
+---
+## functions
+
+### `strToHex`
+### `strToHex`
+```JavaScript
+import * as fnlib from 'fnlib'
+
+console.log ('Hex:', fnlib.strToHex('foobar') )
+// Hex:  66 6f 6f 62 61 72
+
+console.log ('Hex:', fnlib.hexToStr( fnlib.strToHex('foobar') ))
+// Hex:  foobar
 ```
-  "type": "module",
+
+### `strToBinary`
+### `binaryToStr`
+```JavaScript
+import * as fnlib from 'fnlib'
+
+console.log ('Binary: ', fnlib.strToBinary('foobar') )
+// Binary:  1100110 1101111 1101111 1100010 1100001 1110010
+
+console.log ('Binary: ', fnlib.binaryToStr( fnlib.strToBinary('foobar') ))
+// Binary:  foobar
 ```
 
-# Local NPM Package
+### `strToBase64`
+### `base64ToStr`
+```JavaScript
+import * as fnlib from 'fnlib'
 
-`npm link`</br>
+console.log ('Base64: ', fnlib.strToBase64('foobar') )
+// Base64:  Zm9vYmFy
 
-That is the local package installation equivelant to `npm i -g my-package`
+console.log ('Base64: ', fnlib.base64ToStr( fnlib.strToBase64('foobar')) )
+// Base64:  foobar
+```
 
-From within a Node Application execute the following:
+### `strToEscape`
+### `escapeToStr`
+```JavaScript
+import * as fnlib from 'fnlib'
 
-`npm link mytn-funlib`
+console.log ('Escape: ', fnlib.strToEscape('var x = foobar') )
+// Escape:  var%20x%20%3D%20foobar
 
-This will install the package into the app, similiar to `npm i mytn-funlib`
+console.log ('Escape: ', fnlib.escapeToStr( fnlib.strToEscape('var x = foobar') ))
+// Escape:  var x = foobar
+```
 
+### `capitalizeFirstLetter`
+```JavaScript
+import * as fnlib from 'fnlib'
+
+console.log('First Name:,' fnlib.capitalizeFirstLetter('foo') )
+// Foo
+
+console.log('Last Name :,'fnlib.capitalizeFirstLetter('bar') )
+// Bar
+```
+
+### `formatBytes`
+```JavaScript
+import * as fnlib from 'fnlib'
+import os from 'os'
+
+console.log('Memory:', fnlib.formatBytes( os.totalmem() ))
+// Memory: 32 GB
+```
+
+### `sleep`
+```JavaScript
+import * as fnlib from 'fnlib'
+
+await sleep(5000)
+```
+
+### `getTimeRemaining`
+### `getTimeSince`
+```JavaScript
+import * as fnlib from 'fnlib'
+
+const startTime = new Date(Date.now())
+await sleep(2000)
+console.log( fnlib.getTimeSince(startTime) )
+// { total: 2000, years: 0, days: 0, hours: 0, minutes: 0, seconds: 2 }
+
+const endTime = new Date(Date.now() + 1000 * 60 )
+console.log( fnlib.getTimeRemaining( endTime) )
+// { total: 60000, years: 0, days: 0, hours: 0, minutes: 1, seconds: 0 }
+```
 
