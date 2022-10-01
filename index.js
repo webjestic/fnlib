@@ -14,27 +14,27 @@ import sleep from './fnlib/sleep.js'
 import { getTimeRemaining, getTimeSince } from './fnlib/timeDiff.js'
 
 // var myStr = 'var x = foobar'
-var myStr = 'foobar'
-console.log ('Binary: ', strToBinary(myStr) )
-console.log ('Binary: ', binaryToStr(strToBinary(myStr)) )
-console.log ('Hex: ', strToHex(myStr) )
-console.log ('Hex: ', hexToStr(strToHex(myStr)) )
-console.log ('Base64: ', strToBase64(myStr) )
-console.log ('Base64: ', base64ToStr(strToBase64(myStr)) )
-console.log ('Escape: ', strToEscape(myStr) )
-console.log ('Escape: ', escapeToStr(strToEscape(myStr)) )
+// var myStr = 'foobar'
+// console.log ('Binary: ', strToBinary(myStr) )
+// console.log ('Binary: ', binaryToStr(strToBinary(myStr)) )
+// console.log ('Hex: ', strToHex(myStr) )
+// console.log ('Hex: ', hexToStr(strToHex(myStr)) )
+// console.log ('Base64: ', strToBase64(myStr) )
+// console.log ('Base64: ', base64ToStr(strToBase64(myStr)) )
+// console.log ('Escape: ', strToEscape(myStr) )
+// console.log ('Escape: ', escapeToStr(strToEscape(myStr)) )
 
-console.log( capitalizeFirstLetter('first') )
-console.log( capitalizeFirstLetter('last') )
+// console.log( capitalizeFirstLetter('first') )
+// console.log( capitalizeFirstLetter('last') )
 
 // console.log('Memory:', formatBytes( os.totalmem() ))
 
-const startTime = new Date(Date.now())
-await sleep(2000)
-console.log( getTimeSince(startTime) )
+// const startTime = new Date(Date.now())
+// await sleep(2000)
+// console.log( getTimeSince(startTime) )
 
-const endTime = new Date(Date.now() + 1000 * 60 /* 1 minute */ )
-console.log( getTimeRemaining( endTime) )
+// const endTime = new Date(Date.now() + 1000 * 60 /* 1 minute */ )
+// console.log( getTimeRemaining( endTime) )
 
 
 export default { 
