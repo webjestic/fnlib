@@ -6,21 +6,13 @@ Simple library of JavaScript Node functions.
 
 `npm i fnlib`
 
-## Import
-
-Import all the functions: </br>
-`import * as fnlib from 'fnlib`
-
-Import only what you need: </br>
-`import { strToHex, hexToStr } from 'fnlib`
-
 ---
 ## functions
 
 ### `strToHex`
 ### `strToHex`
 ```JavaScript
-import * as fnlib from 'fnlib'
+import fnlib from 'fnlib'
 
 console.log ('Hex:', fnlib.strToHex('foobar') )
 // Hex:  66 6f 6f 62 61 72
@@ -32,7 +24,7 @@ console.log ('Hex:', fnlib.hexToStr( fnlib.strToHex('foobar') ))
 ### `strToBinary`
 ### `binaryToStr`
 ```JavaScript
-import * as fnlib from 'fnlib'
+import fnlib from 'fnlib'
 
 console.log ('Binary: ', fnlib.strToBinary('foobar') )
 // Binary:  1100110 1101111 1101111 1100010 1100001 1110010
@@ -44,7 +36,7 @@ console.log ('Binary: ', fnlib.binaryToStr( fnlib.strToBinary('foobar') ))
 ### `strToBase64`
 ### `base64ToStr`
 ```JavaScript
-import * as fnlib from 'fnlib'
+import fnlib from 'fnlib'
 
 console.log ('Base64: ', fnlib.strToBase64('foobar') )
 // Base64:  Zm9vYmFy
@@ -56,7 +48,7 @@ console.log ('Base64: ', fnlib.base64ToStr( fnlib.strToBase64('foobar')) )
 ### `strToEscape`
 ### `escapeToStr`
 ```JavaScript
-import * as fnlib from 'fnlib'
+import fnlib from 'fnlib'
 
 console.log ('Escape: ', fnlib.strToEscape('var x = foobar') )
 // Escape:  var%20x%20%3D%20foobar
@@ -67,7 +59,7 @@ console.log ('Escape: ', fnlib.escapeToStr( fnlib.strToEscape('var x = foobar') 
 
 ### `capitalizeFirstLetter`
 ```JavaScript
-import * as fnlib from 'fnlib'
+import fnlib from 'fnlib'
 
 console.log('First Name:,' fnlib.capitalizeFirstLetter('foo') )
 // Foo
@@ -78,7 +70,7 @@ console.log('Last Name :,'fnlib.capitalizeFirstLetter('bar') )
 
 ### `formatBytes`
 ```JavaScript
-import * as fnlib from 'fnlib'
+import fnlib from 'fnlib'
 import os from 'os'
 
 console.log('Memory:', fnlib.formatBytes( os.totalmem() ))
@@ -87,7 +79,7 @@ console.log('Memory:', fnlib.formatBytes( os.totalmem() ))
 
 ### `sleep`
 ```JavaScript
-import * as fnlib from 'fnlib'
+import fnlib from 'fnlib'
 
 await sleep(5000)
 ```
@@ -95,7 +87,7 @@ await sleep(5000)
 ### `getTimeRemaining`
 ### `getTimeSince`
 ```JavaScript
-import * as fnlib from 'fnlib'
+import fnlib from 'fnlib'
 
 const startTime = new Date(Date.now())
 await sleep(2000)
