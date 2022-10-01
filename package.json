@@ -1,6 +1,6 @@
 {
   "name": "fnlib",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "JavaScript Library of Functions",
   "keywords": [
     "node",
@@ -9,6 +9,12 @@
   ],
   "main": "index.js",
   "type": "module",
+  "files": [
+    "index.js",
+    "fnlib",
+    "LICENSE",
+    "README.md"
+  ],
   "engines": {
     "node": ">14"
   },
