@@ -13,6 +13,9 @@ import formatBytes from './fnlib/formatBytes.js'
 import sleep from './fnlib/sleep.js'
 import { getTimeRemaining, getTimeSince } from './fnlib/timeDiff.js'
 
+import { randomBase64, randomHex, randomUUID } from './fnlib/randomKey.js'
+import randomStr from './fnlib/randomStr.js'
+
 // var myStr = 'var x = foobar'
 // var myStr = 'foobar'
 // console.log ('Binary: ', strToBinary(myStr) )
@@ -36,6 +39,11 @@ import { getTimeRemaining, getTimeSince } from './fnlib/timeDiff.js'
 // const endTime = new Date(Date.now() + 1000 * 60 /* 1 minute */ )
 // console.log( getTimeRemaining( endTime) )
 
+console.log( randomStr(12) )
+console.log( randomBase64(24) )
+console.log( randomHex(32) )
+console.log( randomUUID() )
+
 
 export default { 
     capitalizeFirstLetter,
@@ -51,5 +59,10 @@ export default {
     formatBytes,
     sleep,
     getTimeRemaining,
-    getTimeSince
+    getTimeSince,
+
+    randomBase64,
+    randomHex,
+    randomUUID,
+    randomStr
 }

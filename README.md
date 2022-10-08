@@ -99,3 +99,22 @@ console.log( fnlib.getTimeRemaining( endTime) )
 // { total: 60000, years: 0, days: 0, hours: 0, minutes: 1, seconds: 0 }
 ```
 
+### `randomStr`
+### `randomBase64`
+### `randomHex`
+### `randomUUID`
+```javascript
+import fnlib from 'fnlib'
+
+console.log( fnlib.randomStr(12) )
+// 5g9SVAjliv6a
+
+console.log( fnlib.randomBase64(24) )
+// XlT2ovdDviop95Oe2ylYPoA/
+
+console.log( fnlib.randomHex(32) )
+// 49a92151cd290d1c7b950c4c433ae14e
+
+console.log( fnlib.randomUUID() ) // v4 uuid
+// aadb52c8-9baa-4de8-a1f2-1cbb8ca51dfe
+```
