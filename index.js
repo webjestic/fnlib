@@ -39,10 +39,10 @@ import randomStr from './fnlib/randomStr.js'
 // const endTime = new Date(Date.now() + 1000 * 60 /* 1 minute */ )
 // console.log( getTimeRemaining( endTime) )
 
-console.log( randomStr(12) )
-console.log( randomBase64(24) )
-console.log( randomHex(32) )
-console.log( randomUUID() )
+// console.log( randomStr(12) )
+// console.log( randomBase64(24) )
+// console.log( randomHex(32) )
+// console.log( randomUUID() )
 
 
 export default { 
