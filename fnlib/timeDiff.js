@@ -52,6 +52,7 @@ export function isLeapYear(year= 1980) {
 
 export function getTimeZones() {
     return [
+        'Etc/GMT+12',
         'Europe/Andorra',
         'Asia/Dubai',
         'Asia/Kabul',
