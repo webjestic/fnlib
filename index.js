@@ -11,7 +11,7 @@ import escapeToStr from './fnlib/escapeToStr.js'
 
 import formatBytes from './fnlib/formatBytes.js'
 import sleep from './fnlib/sleep.js'
-import { getTimeRemaining, getTimeSince } from './fnlib/timeDiff.js'
+import { getTimeRemaining, getTimeSince, isLeapYear, getTimeZones, getTimeDrift } from './fnlib/timeDiff.js'
 
 import { randomBase64, randomHex, randomUUID } from './fnlib/randomKey.js'
 import randomStr from './fnlib/randomStr.js'
@@ -44,6 +44,9 @@ import randomStr from './fnlib/randomStr.js'
 // console.log( randomHex(32) )
 // console.log( randomUUID() )
 
+// console.log( isLeapYear(2000) )
+// console.log( isLeapYear(2001) )
+
 
 export default { 
     capitalizeFirstLetter,
@@ -60,6 +63,9 @@ export default {
     sleep,
     getTimeRemaining,
     getTimeSince,
+    isLeapYear,
+    getTimeZones,
+    getTimeDrift,
 
     randomBase64,
     randomHex,

@@ -99,6 +99,24 @@ console.log( fnlib.getTimeRemaining( endTime) )
 // { total: 60000, years: 0, days: 0, hours: 0, minutes: 1, seconds: 0 }
 ```
 
+## `getTimeDrift`
+```javascript
+import fnlib from 'fnlib'
+
+console.log(  fnlib.getTimeDrift('1/1/1980', '1/1/2000') )
+console.log(  fnlib.getTimeDrift('1/1/2000', '1/1/1980') )
+```
+
+## `isLeapYear`
+```javascript
+import fnlib from 'fnlib'
+
+console.log( fnlib.isLeapYear(2000) )
+// true
+console.log( fnlib.isLeapYear(2001) )
+// false
+```
+
 ### `randomStr`
 ### `randomBase64`
 ### `randomHex`
