@@ -1,5 +1,5 @@
 
-export function getAge(birthDate='', fromDate='') {
+export default function getAge(birthDate='', fromDate='') {
   
     const bDate = new Date(birthDate)
     const fDate = new Date(fromDate)

@@ -16,6 +16,8 @@ import { getTimeRemaining, getTimeSince, isLeapYear, getTimeZones, getTimeDrift 
 import { randomBase64, randomHex, randomUUID } from './fnlib/randomKey.js'
 import randomStr from './fnlib/randomStr.js'
 
+import getAge from './fnlib/getAge.js'
+
 // var myStr = 'var x = foobar'
 // var myStr = 'foobar'
 // console.log ('Binary: ', strToBinary(myStr) )
@@ -70,5 +72,7 @@ export default {
     randomBase64,
     randomHex,
     randomUUID,
-    randomStr
+    randomStr,
+
+    getAge
 }
