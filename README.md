@@ -136,3 +136,11 @@ console.log( fnlib.randomHex(32) )
 console.log( fnlib.randomUUID() ) // v4 uuid
 // aadb52c8-9baa-4de8-a1f2-1cbb8ca51dfe
 ```
+
+## `geAge`
+```javascript
+import fnlib from 'fnlib'
+
+console.log(  fnlib.getAge('1/1/1980', '1/1/2000') )
+console.log(  fnlib.getAge('1/1/2000', '1/1/1980') )
+```
