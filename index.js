@@ -19,6 +19,9 @@ import randomStr from './fnlib/randomStr.js'
 import getAge from './fnlib/getAge.js'
 import isEven from './fnlib/isEven.js'
 
+import wordsToNumber from './fnlib/wordsToNumbers.js'
+import numberToWords from './fnlib/numbersToWords.js'
+
 // var myStr = 'var x = foobar'
 // var myStr = 'foobar'
 // console.log ('Binary: ', strToBinary(myStr) )
@@ -76,5 +79,8 @@ export default {
     randomStr,
 
     getAge,
-    isEven
+    isEven,
+
+    wordsToNumber,
+    numberToWords
 }
