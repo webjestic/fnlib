@@ -17,6 +17,7 @@ import { randomBase64, randomHex, randomUUID } from './fnlib/randomKey.js'
 import randomStr from './fnlib/randomStr.js'
 
 import getAge from './fnlib/getAge.js'
+import isEven from './fnlib/isEven.js'
 
 // var myStr = 'var x = foobar'
 // var myStr = 'foobar'
@@ -74,5 +75,6 @@ export default {
     randomUUID,
     randomStr,
 
-    getAge
+    getAge,
+    isEven
 }
