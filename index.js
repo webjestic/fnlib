@@ -53,7 +53,6 @@ import numberToWords from './fnlib/numbersToWords.js'
 // console.log( isLeapYear(2000) )
 // console.log( isLeapYear(2001) )
 
-
 export default { 
     capitalizeFirstLetter,
     strToHex,
