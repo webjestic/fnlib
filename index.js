@@ -63,7 +63,7 @@ export default {
     base64ToStr,
     strToEscape,
     escapeToStr,
-  
+
     formatBytes,
     sleep,
     getTimeRemaining,
