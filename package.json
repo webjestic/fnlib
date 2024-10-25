@@ -15,9 +15,6 @@
     "LICENSE",
     "README.md"
   ],
-  "engines": {
-    "node": ">14"
-  },
   "scripts": {
     "test": "vitest --run",
     "lint": "eslint . --cache "
