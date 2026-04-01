@@ -21,9 +21,9 @@ function wordsToNumber(words) {
   
         for (let i = 0; i < group.length; i++) {
             const word = group[i]
-            if (units[word]) 
+            if (units[word] !== undefined)
                 tempResult += units[word]
-            else if (tens[word]) 
+            else if (tens[word] !== undefined)
                 tempResult += tens[word]
             else if (word === 'hundred') 
                 tempResult *= 100
@@ -53,10 +53,5 @@ function wordsToNumber(words) {
     return total
 }
   
-// Example usage
-// const words = 'five million three hundred fifty six thousand one hundred forty seven'
-// const number = wordsToNumber(words)
-// console.log(number)
-
 export default wordsToNumber
   
