@@ -58,13 +58,8 @@ function numberToWords(number) {
     })
   
     // Joining the words for each chunk
-    return wordChunks.reverse().join(', ')
+    return wordChunks.reverse().filter(Boolean).join(', ')
 }
   
-// Example usage
-// const number = 5356147
-// const words = numberToWords(number)
-// console.log(words)
-
 export default numberToWords
   

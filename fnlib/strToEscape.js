@@ -1,5 +1,5 @@
 
 
 export default function strToEscape(str) {
-    return escape(str)
+    return encodeURIComponent(str)
 }

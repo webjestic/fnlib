@@ -22,37 +22,6 @@ import isEven from './fnlib/isEven.js'
 import wordsToNumber from './fnlib/wordsToNumbers.js'
 import numberToWords from './fnlib/numbersToWords.js'
 
-// var myStr = 'var x = foobar'
-// var myStr = 'foobar'
-// console.log ('Binary: ', strToBinary(myStr) )
-// console.log ('Binary: ', binaryToStr(strToBinary(myStr)) )
-// console.log ('Hex: ', strToHex(myStr) )
-// console.log ('Hex: ', hexToStr(strToHex(myStr)) )
-// console.log ('Base64: ', strToBase64(myStr) )
-// console.log ('Base64: ', base64ToStr(strToBase64(myStr)) )
-// console.log ('Escape: ', strToEscape(myStr) )
-// console.log ('Escape: ', escapeToStr(strToEscape(myStr)) )
-
-// console.log( capitalizeFirstLetter('first') )
-// console.log( capitalizeFirstLetter('last') )
-
-// console.log('Memory:', formatBytes( os.totalmem() ))
-
-// const startTime = new Date(Date.now())
-// await sleep(2000)
-// console.log( getTimeSince(startTime) )
-
-// const endTime = new Date(Date.now() + 1000 * 60 /* 1 minute */ )
-// console.log( getTimeRemaining( endTime) )
-
-// console.log( randomStr(12) )
-// console.log( randomBase64(24) )
-// console.log( randomHex(32) )
-// console.log( randomUUID() )
-
-// console.log( isLeapYear(2000) )
-// console.log( isLeapYear(2001) )
-
 export default { 
     capitalizeFirstLetter,
     strToHex,

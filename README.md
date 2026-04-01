@@ -10,14 +10,14 @@ Simple library of JavaScript Node functions.
 ## functions
 
 ### `strToHex`
-### `strToHex`
+### `hexToStr`
 ```JavaScript
 import fnlib from 'fnlib'
 
-console.log ('Hex:', fnlib.strToHex('foobar') )
+console.log('Hex:', fnlib.strToHex('foobar'))
 // Hex:  66 6f 6f 62 61 72
 
-console.log ('Hex:', fnlib.hexToStr( fnlib.strToHex('foobar') ))
+console.log('Hex:', fnlib.hexToStr(fnlib.strToHex('foobar')))
 // Hex:  foobar
 ```
 
@@ -26,10 +26,10 @@ console.log ('Hex:', fnlib.hexToStr( fnlib.strToHex('foobar') ))
 ```JavaScript
 import fnlib from 'fnlib'
 
-console.log ('Binary: ', fnlib.strToBinary('foobar') )
+console.log('Binary: ', fnlib.strToBinary('foobar'))
 // Binary:  1100110 1101111 1101111 1100010 1100001 1110010
 
-console.log ('Binary: ', fnlib.binaryToStr( fnlib.strToBinary('foobar') ))
+console.log('Binary: ', fnlib.binaryToStr(fnlib.strToBinary('foobar')))
 // Binary:  foobar
 ```
 
@@ -38,10 +38,10 @@ console.log ('Binary: ', fnlib.binaryToStr( fnlib.strToBinary('foobar') ))
 ```JavaScript
 import fnlib from 'fnlib'
 
-console.log ('Base64: ', fnlib.strToBase64('foobar') )
+console.log('Base64: ', fnlib.strToBase64('foobar'))
 // Base64:  Zm9vYmFy
 
-console.log ('Base64: ', fnlib.base64ToStr( fnlib.strToBase64('foobar')) )
+console.log('Base64: ', fnlib.base64ToStr(fnlib.strToBase64('foobar')))
 // Base64:  foobar
 ```
 
@@ -50,10 +50,10 @@ console.log ('Base64: ', fnlib.base64ToStr( fnlib.strToBase64('foobar')) )
 ```JavaScript
 import fnlib from 'fnlib'
 
-console.log ('Escape: ', fnlib.strToEscape('var x = foobar') )
+console.log('Escape: ', fnlib.strToEscape('var x = foobar'))
 // Escape:  var%20x%20%3D%20foobar
 
-console.log ('Escape: ', fnlib.escapeToStr( fnlib.strToEscape('var x = foobar') ))
+console.log('Escape: ', fnlib.escapeToStr(fnlib.strToEscape('var x = foobar')))
 // Escape:  var x = foobar
 ```
 
@@ -61,10 +61,10 @@ console.log ('Escape: ', fnlib.escapeToStr( fnlib.strToEscape('var x = foobar') 
 ```JavaScript
 import fnlib from 'fnlib'
 
-console.log('First Name:,' fnlib.capitalizeFirstLetter('foo') )
+console.log('First Name:', fnlib.capitalizeFirstLetter('foo'))
 // Foo
 
-console.log('Last Name :,'fnlib.capitalizeFirstLetter('bar') )
+console.log('Last Name:', fnlib.capitalizeFirstLetter('bar'))
 // Bar
 ```
 
@@ -73,7 +73,7 @@ console.log('Last Name :,'fnlib.capitalizeFirstLetter('bar') )
 import fnlib from 'fnlib'
 import os from 'os'
 
-console.log('Memory:', fnlib.formatBytes( os.totalmem() ))
+console.log('Memory:', fnlib.formatBytes(os.totalmem()))
 // Memory: 32 GB
 ```
 
@@ -81,7 +81,7 @@ console.log('Memory:', fnlib.formatBytes( os.totalmem() ))
 ```JavaScript
 import fnlib from 'fnlib'
 
-await sleep(5000)
+await fnlib.sleep(5000)
 ```
 
 ### `getTimeRemaining`
@@ -90,30 +90,30 @@ await sleep(5000)
 import fnlib from 'fnlib'
 
 const startTime = new Date(Date.now())
-await sleep(2000)
-console.log( fnlib.getTimeSince(startTime) )
+await fnlib.sleep(2000)
+console.log(fnlib.getTimeSince(startTime))
 // { total: 2000, years: 0, days: 0, hours: 0, minutes: 0, seconds: 2 }
 
-const endTime = new Date(Date.now() + 1000 * 60 )
-console.log( fnlib.getTimeRemaining( endTime) )
+const endTime = new Date(Date.now() + 1000 * 60)
+console.log(fnlib.getTimeRemaining(endTime))
 // { total: 60000, years: 0, days: 0, hours: 0, minutes: 1, seconds: 0 }
 ```
 
-## `getTimeDrift`
+### `getTimeDrift`
 ```javascript
 import fnlib from 'fnlib'
 
-console.log(  fnlib.getTimeDrift('1/1/1980', '1/1/2000') )
-console.log(  fnlib.getTimeDrift('1/1/2000', '1/1/1980') )
+console.log(fnlib.getTimeDrift('1/1/1980', '1/1/2000'))
+console.log(fnlib.getTimeDrift('1/1/2000', '1/1/1980'))
 ```
 
-## `isLeapYear`
+### `isLeapYear`
 ```javascript
 import fnlib from 'fnlib'
 
-console.log( fnlib.isLeapYear(2000) )
+console.log(fnlib.isLeapYear(2000))
 // true
-console.log( fnlib.isLeapYear(2001) )
+console.log(fnlib.isLeapYear(2001))
 // false
 ```
 
@@ -124,23 +124,47 @@ console.log( fnlib.isLeapYear(2001) )
 ```javascript
 import fnlib from 'fnlib'
 
-console.log( fnlib.randomStr(12) )
+console.log(fnlib.randomStr(12))
 // 5g9SVAjliv6a
 
-console.log( fnlib.randomBase64(24) )
+console.log(fnlib.randomBase64(24))
 // XlT2ovdDviop95Oe2ylYPoA/
 
-console.log( fnlib.randomHex(32) )
+console.log(fnlib.randomHex(32))
 // 49a92151cd290d1c7b950c4c433ae14e
 
-console.log( fnlib.randomUUID() ) // v4 uuid
+console.log(fnlib.randomUUID()) // v4 uuid
 // aadb52c8-9baa-4de8-a1f2-1cbb8ca51dfe
 ```
 
-## `geAge`
+> Note: `randomBase64` and `randomHex` use Node's `crypto` module (cryptographically secure). `randomStr` uses `Math.random()` and is not suitable for security-sensitive use cases.
+
+### `getAge`
 ```javascript
 import fnlib from 'fnlib'
 
-console.log(  fnlib.getAge('1/1/1980', '1/1/2000') )
-console.log(  fnlib.getAge('1/1/2000', '1/1/1980') )
+console.log(fnlib.getAge('1/1/1980', '1/1/2000'))
+// 20
+```
+
+### `isEven`
+```javascript
+import fnlib from 'fnlib'
+
+console.log(fnlib.isEven(4))
+// true
+console.log(fnlib.isEven(3))
+// false
+```
+
+### `numberToWords`
+### `wordsToNumber`
+```javascript
+import fnlib from 'fnlib'
+
+console.log(fnlib.numberToWords(5356147))
+// five million, three hundred fifty six thousand, one hundred forty seven
+
+console.log(fnlib.wordsToNumber('five million, three hundred fifty six thousand, one hundred forty seven'))
+// 5356147
 ```
